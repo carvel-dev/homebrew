@@ -1,6 +1,6 @@
 # Homebrew Tap
 
-Provides tools from `github.com/k14s` via [Homebrew](http://brew.sh/) package.
+Provides tools from [https://carvel.dev](https://carvel.dev) via [Homebrew](http://brew.sh/) package.
 
 To install a package:
 
