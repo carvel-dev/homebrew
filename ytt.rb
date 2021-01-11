@@ -1,14 +1,14 @@
 class Ytt < Formula
   desc "YAML Templating Tool"
   homepage "https://get-ytt.io"
-  version "v0.30.0"
+  version "v0.31.0"
 
   if OS.mac?
-    url "https://github.com/k14s/ytt/releases/download/v0.30.0/ytt-darwin-amd64"
-    sha256 "a1a56c3292e355b9891b2c4ce7525d78f0e1ffd8630b856d300e9a7f383e707c"
+    url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.31.0/ytt-darwin-amd64"
+    sha256 "bf85381a12954793d5a18f252579cb1bc043aada2c34ac0974e2ab8cf03a1de3"
   elsif OS.linux?
-    url "https://github.com/k14s/ytt/releases/download/v0.30.0/ytt-linux-amd64"
-    sha256 "456e58c70aef5cd4946d29ed106c2b2acbb4d0d5e99129e526ecb4a859a36145"
+    url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.31.0/ytt-linux-amd64"
+    sha256 "32e7cdc38202b49fe673442bd22cb2b130e13f0f05ce724222a06522d7618395"
   end
 
   depends_on :arch => :x86_64
