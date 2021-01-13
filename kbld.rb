@@ -1,14 +1,14 @@
 class Kbld < Formula
   desc "kbld helps working with container images used in Kubernetes configuration files"
-  homepage "https://github.com/k14s/kbld"
-  version "v0.27.0"
+  homepage "https://carvel.dev/kbld/"
+  version "v0.28.0"
 
   if OS.mac?
-    url "https://github.com/k14s/kbld/releases/download/v0.27.0/kbld-darwin-amd64"
-    sha256 "17e1336b714f9b6e9a99f86c6a8952be56b018d7aacab712f70e59430edfbdab"
+    url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.28.0/kbld-darwin-amd64"
+    sha256 "4962a56a755fb3f12678d1024007bcf87485e350b031924d5f24c3361e7dd7f9"
   elsif OS.linux?
-    url "https://github.com/k14s/kbld/releases/download/v0.27.0/kbld-linux-amd64"
-    sha256 "9c2c38ce2f884523a6888c3ba5c28bb9a7ab5d3f9879ab8492db1372e206e83b"
+    url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.28.0/kbld-linux-amd64"
+    sha256 "3174e5b42286aab4359d2bc12a85356ba520744fd4e26d6511fb8d705e7170c3"
   end
 
   depends_on :arch => :x86_64
