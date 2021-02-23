@@ -4,11 +4,11 @@ class Imgpkg < Formula
   version "v0.4.0"
 
   if OS.mac?
-    url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.4.0/imgpkg-darwin-amd64"
-    sha256 "5d751e00ca67e0fde17d2ea9d5ed8f32a344a13690efccc88edd33fb6687d2b0"
+    url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.5.0/imgpkg-darwin-amd64"
+    sha256 "465d0ef98eeca0d5487ad0372703d5d72c7989dc301b9ae6aa934fcb8e20b73b"
   elsif OS.linux?
-    url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.4.0/imgpkg-linux-amd64"
-    sha256 "68f6798af67e62dc7ac738162db9e29ce428d41245d56c88fc041ed435376d49"
+    url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.5.0/imgpkg-linux-amd64"
+    sha256 "90dff1d3d88d51a1f73687f9239265afd8bc5275c9f3bc51e4d8f2f381b01f41"
   end
 
   depends_on :arch => :x86_64
