@@ -1,7 +1,7 @@
 class Imgpkg < Formula
   desc "Imgpkg"
   homepage "https://carvel.dev/imgpkg/"
-  version "v0.4.0"
+  version "v0.5.0"
 
   if OS.mac?
     url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.5.0/imgpkg-darwin-amd64"
