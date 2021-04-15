@@ -1,14 +1,14 @@
 class Imgpkg < Formula
   desc "Imgpkg"
   homepage "https://carvel.dev/imgpkg/"
-  version "v0.6.0"
+  version "v0.6.1"
 
   if OS.mac?
-    url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.6.0/imgpkg-darwin-amd64"
-    sha256 "6346be7afa7258e9f32e1b7641c8b7c3e645ba0ff79b01a8a258229b517ae188"
+    url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.6.1/imgpkg-darwin-amd64"
+    sha256 "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.6.1/imgpkg-darwin-amd64"
   elsif OS.linux?
-    url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.6.0/imgpkg-linux-amd64"
-    sha256 "b0d29d28a28db5632ce48cd9ea414ae1d3c9da382c96c72abb9961587ffb657f"
+    url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.6.1/imgpkg-linux-amd64"
+    sha256 "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.6.1/imgpkg-linux-amd64"
   end
 
   depends_on :arch => :x86_64
