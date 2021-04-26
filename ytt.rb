@@ -15,11 +15,11 @@ class Ytt < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.32.0/ytt-darwin-arm64"
-      sha256 "42470495f35fbbe66a0c40ab516519839448475e0e24477b1f33f69d38834175"
-    else
       url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.32.0/ytt-linux-arm64"
       sha256 "95e5bf9c1c4d972edfa656311ed3ce6b6d745638aad94003bee5807736fe32e3"
+    else
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.32.0/ytt-linux-amd64"
+      sha256 "1a8f30e0b86b9daa649433e6092a4a1c6fc9c88400b6842af357c7380924bbc6"
     end
   end
 
