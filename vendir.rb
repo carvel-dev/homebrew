@@ -1,20 +1,20 @@
 class Vendir < Formula
   desc "Declaratively state what should be in a directory"
   homepage "https://carvel.dev/vendir"
-  version "v0.19.0"
+  version "v0.20.0"
 
   on_macos do
-    url "https://github.com/vmware-tanzu/carvel-vendir/releases/download/v0.19.0/vendir-darwin-amd64"
-    sha256 "81c11620d97ff05ab37036bb1761ef0faff403a3380ea87a1152ec36508e698d"
+    url "https://github.com/vmware-tanzu/carvel-vendir/releases/download/v0.20.0/vendir-darwin-amd64"
+    sha256 "85d8b1416c4e0fb5c3c01ce7e9d36297844fb4553683db4054eabcccfe220d7e"
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-vendir/releases/download/v0.19.0/vendir-linux-arm64"
-      sha256 "5856c2b7701bb41eb02eb8cd23ddeab142d2571dc001bb05adffc469429b3831"
+      url "https://github.com/vmware-tanzu/carvel-vendir/releases/download/v0.20.0/vendir-linux-arm64"
+      sha256 "e5c56877bd5f2f291239b4c75c1eb8a8a682ba643981f797c195d89c372b15b4"
     else
-      url "https://github.com/vmware-tanzu/carvel-vendir/releases/download/v0.19.0/vendir-linux-amd64"
-      sha256 "7f4634715be0219c779a0620f4aabd79a178a733bf29ef87428e758391aef148"
+      url "https://github.com/vmware-tanzu/carvel-vendir/releases/download/v0.20.0/vendir-linux-amd64"
+      sha256 "45290b749e42478103f6887f223628581095089fd23a88bc3c1a812bfeaf6a76"
     end
   end
 
