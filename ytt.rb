@@ -1,25 +1,25 @@
 class Ytt < Formula
   desc "YAML Templating Tool"
   homepage "https://carvel.dev/ytt"
-  version "v0.35.0"
+  version "v0.35.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.35.0/ytt-darwin-arm64"
-      sha256 "3304f422c7192ea20790ae5ad8246d8310dbe1766901a73fe72b9a8ba32b982c"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.35.1/ytt-darwin-arm64"
+      sha256 "acc4e759fce0489a7d6fdb7521a6db05047c1073af4e6497dc18c860146593ad"
     else
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.35.0/ytt-darwin-amd64"
-      sha256 "425c5a66c6d1cb765fff11b670081dbe9c63679d25129e4f566f37242cef324d"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.35.1/ytt-darwin-amd64"
+      sha256 "1f2b61d02f6d8184889719d5e0277a1ea82219f96873345157e81075ca59808e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.35.0/ytt-linux-arm64"
-      sha256 "11ed09e6b842029f47cea376c7f0c54110f3a015ae41a2c8a505d448cb69019a"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.35.1/ytt-linux-arm64"
+      sha256 "d7f7686600c617efa611acb5d3e0825f58a60088dd5956cc412f718ed2162e3f"
     else
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.35.0/ytt-linux-amd64"
-      sha256 "23718f9b92b952f53b8ee603981031e3d2a54d9ad2aaf933da692d8e07a33c90"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.35.1/ytt-linux-amd64"
+      sha256 "0aa78f7b5f5a0a4c39bddfed915172880344270809c26b9844e9d0cbf6437030"
     end
   end
 
