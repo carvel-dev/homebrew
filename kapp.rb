@@ -4,8 +4,13 @@ class Kapp < Formula
   version "v0.39.0"
 
   on_macos do
-    url "https://github.com/k14s/kapp/releases/download/v0.39.0/kapp-darwin-amd64"
-    sha256 "43d79433d3d4dad4ffde7c775ea99f5c6b10c8949d54fd2a048ba66aaea89a6b"
+    if Hardware::CPU.arm?
+      url "https://github.com/k14s/kapp/releases/download/v0.39.0/kapp-darwin-arm64"
+      sha256 "dfd5d32c845b62fd2617342424fb4376ce9a5a6fe644a9bbdf4b9f31856533aa"
+    else
+      url "https://github.com/k14s/kapp/releases/download/v0.39.0/kapp-darwin-amd64"
+      sha256 "43d79433d3d4dad4ffde7c775ea99f5c6b10c8949d54fd2a048ba66aaea89a6b"
+    end
   end
 
   on_linux do
