@@ -26,10 +26,10 @@ jobs:
         ref: develop
     - name: pull-request
       env:
-        source_branch: "imgpkg-homebrew"
-        destination_branch: "develop"
-        pr_title: "Update imgpkg homebrew Formula: ${{ github.ref }}"
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        INPUT_SOURCE_BRANCH: "imgpkg-homebrew"
+        INPUT_DESTINATION_BRANCH: "develop"
+        INPUT_PR_TITLE: "Update imgpkg homebrew Formula: ${{ github.ref }}"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         set -e
         set -o pipefail
