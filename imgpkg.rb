@@ -12,8 +12,12 @@ class Imgpkg < Formula
       sha256 "a548abe7adfd4dc3f8c86d63a26eb03168fafdb4503b6296f196106db303f71b"
     end
   elsif OS.linux?
-    url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.19.0/imgpkg-linux-amd64"
-    sha256 "3a0a8b081fe35651dfbadf4c1531fe919a28159c70f92a2de49d42fa98a571ce"
+    if Hardware::CPU.arm?
+      odie "linux/arm64 is not supported. If you would like support please raise an issue upstream to https://github.com/vmware-tanzu/carvel-imgpkg"
+    else
+      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.19.0/imgpkg-linux-amd64"
+      sha256 "3a0a8b081fe35651dfbadf4c1531fe919a28159c70f92a2de49d42fa98a571ce"
+    end
   end
 
   def install
