@@ -1,25 +1,25 @@
 class Kapp < Formula
   desc "Kapp"
   homepage "https://get-kapp.io"
-  version "v0.40.0"
+  version "v0.41.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k14s/kapp/releases/download/v0.40.0/kapp-darwin-arm64"
-      sha256 "1632b8365e9392c08425e9ff8003fe5ff616b622c6e0255ef69bc87db0349afe"
+      url "https://github.com/k14s/kapp/releases/download/v0.41.0/kapp-darwin-arm64"
+      sha256 "8ff71bc20b6a0c6f4f1c9b105f7d1cb29cfcbca99e29d6bb6569eb2e32cb8266"
     else
-      url "https://github.com/k14s/kapp/releases/download/v0.40.0/kapp-darwin-amd64"
-      sha256 "d667c5cd05eb20df74763b59f31203569f7c89f185c5b7945d74a1235c15040d"
+      url "https://github.com/k14s/kapp/releases/download/v0.41.0/kapp-darwin-amd64"
+      sha256 "928f1269b52bbb2c725a3ccccc0a63925a03d169d8d3341183e23d429530ef2c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/k14s/kapp/releases/download/v0.40.0/kapp-linux-arm64"
-      sha256 "5a79561d07d6ef37fec795b9956d250cf9a1e4b245bd14bc154a21d9ab811a4c"
+      url "https://github.com/k14s/kapp/releases/download/v0.41.0/kapp-linux-arm64"
+      sha256 "81a8b064c2a1c94ce5e185d861384354251db9d5935ab7942280dc05cf0f452f"
     else
-      url "https://github.com/k14s/kapp/releases/download/v0.40.0/kapp-linux-amd64"
-      sha256 "94cfdcf8a3aec521a68c4c2c569434684e71914d42296bc9fee8bfe912f63984"
+      url "https://github.com/k14s/kapp/releases/download/v0.41.0/kapp-linux-amd64"
+      sha256 "ce4c38a6c6c7785d32afbc31ba316a6b89c068903d356a2ef8f54101b4073953"
     end
   end
 
