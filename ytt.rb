@@ -2,6 +2,7 @@ class Ytt < Formula
   desc "YAML Templating Tool"
   homepage "https://carvel.dev/ytt"
   version "v0.37.0"
+  revision 1
 
   on_macos do
     if Hardware::CPU.arm?
@@ -25,6 +26,16 @@ class Ytt < Formula
 
   def install
     bin.install stable.url.split("/")[-1] => "ytt"
+    chmod 0755, bin/"ytt"
+
+    bash_output = Utils.safe_popen_read(bin/"ytt", "completion", "bash")
+    (bash_completion/"ytt").write bash_output
+
+    zsh_output = Utils.safe_popen_read(bin/"ytt", "completion", "zsh")
+    (zsh_completion/"_ytt").write zsh_output
+
+    fish_output = Utils.safe_popen_read(bin/"ytt", "completion", "fish")
+    (fish_completion/"ytt.fish").write fish_output
   end
 
   test do
