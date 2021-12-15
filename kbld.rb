@@ -1,23 +1,22 @@
 class Kbld < Formula
   desc "Kbld"
   homepage "https://carvel.dev/kbld/"
-  version "v0.31.0"
+  version "v0.32.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.31.0/kbld-darwin-arm64"
-      sha256 "7287efdd8ba1a58b0a6a3cf5c41a9c35ba12b8b30ac3e275f68c9640af857903"
+      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.32.0/kbld-darwin-arm64"
+      sha256 "819c9ae56567583700b190f7dfdc5fe7620289f76480ba01c62b4c6ca7eda905"
     else
-      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.31.0/kbld-darwin-amd64"
-      sha256 "d3b0a30bf3a79bedeb25d8548a91254954b99cd4a0c03f3a810b331fc4d1f071"
+      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.32.0/kbld-darwin-amd64"
+      sha256 "5fc8a491327294717611974c6ab3da2bda3f3809ef3147c1e8472ac62af3ee18"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.31.0/kbld-linux-arm64"
-      sha256 "7c69efa53994c29d2a090c153a65d8d7f10aa89fa7493668135a613875c910ce"
+      odie "linux/arm64 is not supported. If you would like support please raise an issue upstream to https://github.com/vmware-tanzu/carvel-kbld"
     else
-      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.31.0/kbld-linux-amd64"
-      sha256 "ba0be56d9e74b067f3e659de0b79100b0b9df86a2e3e0e6ff533b1e019c22c23"
+      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.32.0/kbld-linux-amd64"
+      sha256 "de546ac46599e981c20ad74cd2deedf2b0f52458885d00b46b759eddb917351a"
     end
   end
 
