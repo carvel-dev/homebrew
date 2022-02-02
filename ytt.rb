@@ -1,31 +1,29 @@
 class Ytt < Formula
-  desc "YAML Templating Tool"
-  homepage "https://carvel.dev/ytt"
-  version "v0.38.0"
-  revision 1
+  desc "Ytt"
+  homepage "https://carvel.dev/ytt/"
+  version "v0.39.0"
 
-  on_macos do
+  if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.38.0/ytt-darwin-arm64"
-      sha256 "029678ab1c95d42ec559dcde854fcd3f89669cf2af83ca3d24603d45e4036202"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.39.0/ytt-darwin-arm64"
+      sha256 "723224d36471a9bcf160e2754554ba109cff2015ea01b87a9177826a839b7425"
     else
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.38.0/ytt-darwin-amd64"
-      sha256 "1f84e26457a5efd2470df408072bf2f182c939414e4958f82e19e122d2ee120c"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.39.0/ytt-darwin-amd64"
+      sha256 "b188f6a6f0c44ef8d3cf07d5237dcfa79d04b8c2823d697b58de7236034fb03a"
     end
-  end
-
-  on_linux do
+  elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.38.0/ytt-linux-arm64"
-      sha256 "c4939a3de0518b802a2c75bf61e837d2c2137289261433eaa101760cee793d04"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.39.0/ytt-linux-arm64"
+      sha256 "64e2bfd870d5b5249f3f261bc9224dbe870877f35cd3040c2ec46c3aaca94d43"
     else
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.38.0/ytt-linux-amd64"
-      sha256 "2ca800c561464e0b252e5ee5cacff6aa53831e65e2fb9a09cf388d764013c40d"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.39.0/ytt-linux-amd64"
+      sha256 "7a472b8c62bfec5c12586bb39065beda42c6fe43cf24271275e4dbc0a04acb8b"
     end
   end
 
   def install
     bin.install stable.url.split("/")[-1] => "ytt"
+    
     chmod 0755, bin/"ytt"
 
     bash_output = Utils.safe_popen_read(bin/"ytt", "completion", "bash")
@@ -36,9 +34,11 @@ class Ytt < Formula
 
     fish_output = Utils.safe_popen_read(bin/"ytt", "completion", "fish")
     (fish_completion/"ytt.fish").write fish_output
+    
   end
 
   test do
     system "#{bin}/ytt", "version"
   end
 end
+
