@@ -1,22 +1,22 @@
 class Imgpkg < Formula
   desc "Imgpkg"
   homepage "https://carvel.dev/imgpkg/"
-  version "v0.25.0"
+  version "v0.26.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.25.0/imgpkg-darwin-arm64"
-      sha256 "6eacaabe3ee8cfe6f3e6b7f0ade63048254bca3a5d94a115feed60219bdd0f67"
+      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.26.0/imgpkg-darwin-arm64"
+      sha256 "831c4c570377c6659f509a5c770e088c8ee696f076abe69e6908a49f0163c4be"
     else
-      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.25.0/imgpkg-darwin-amd64"
-      sha256 "c5c0b4e340001a98c361a2021c2cc7fd62bcaa64be7b85151ed9807459ab2f18"
+      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.26.0/imgpkg-darwin-amd64"
+      sha256 "99f174e0fba4f864d67a3002ce930d6ff162a97a6c89d653c52a9393bd5e28a4"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
       odie "linux/arm64 is not supported. If you would like support please raise an issue upstream to github.com/vmware-tanzu/carvel-imgpkg"
     else
-      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.25.0/imgpkg-linux-amd64"
-      sha256 "14ce0b48a3a00352cdf0ef263aa98a9bcd90d5ea8634fdf6b88016e2a08f09d1"
+      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.26.0/imgpkg-linux-amd64"
+      sha256 "a16baeb24ffd3a598c99d606f084193bd13fa6b2876e7a83ec585943c956fadc"
     end
   end
 
