@@ -1,33 +1,33 @@
 class Kapp < Formula
   desc "Kapp"
-  homepage "https://get-kapp.io"
-  version "v0.46.0"
+  homepage "https://carvel.dev/kapp/"
+  version "v0.47.0"
 
-  on_macos do
+  if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/k14s/kapp/releases/download/v0.46.0/kapp-darwin-arm64"
-      sha256 "5fd36b56a7d8e8f99214f2e8096bd7f293492e0ffba98cb14611150efa113f4f"
+      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.47.0/kapp-darwin-arm64"
+      sha256 "e0c1962884ad153d055786b523827c09d3c05a3faa07c0b186acd40bdb7d46aa"
     else
-      url "https://github.com/k14s/kapp/releases/download/v0.46.0/kapp-darwin-amd64"
-      sha256 "7a3e5235689a9cc6d0e85ba66db3f1e57ab65323d3111e0867771111d2b0c1a3"
+      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.47.0/kapp-darwin-amd64"
+      sha256 "ed0a7a86828517e7aa3d4bede659ac725806b0201692f2d574beb71785220406"
     end
-  end
-
-  on_linux do
+  elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/k14s/kapp/releases/download/v0.46.0/kapp-linux-arm64"
-      sha256 "f40cf819f170ce50632bcb683098a05711d0a2a7110b72eb2754a7fc651eb2f3"
+      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.47.0/kapp-linux-arm64"
+      sha256 "8808e0cbe06028581b8ed48e0a8426b7fd9dc26d17e24f9ab96522774892839a"
     else
-      url "https://github.com/k14s/kapp/releases/download/v0.46.0/kapp-linux-amd64"
-      sha256 "130f648cd921761b61bb03d7a0f535d1eea26e0b5fc60e2839af73f4ea98e22f"
+      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.47.0/kapp-linux-amd64"
+      sha256 "2b1bd5e3a35ed63045be80a7cc8cbc054fe4e98c89c55f9006c8fec2243658a4"
     end
   end
 
   def install
     bin.install stable.url.split("/")[-1] => "kapp"
+    
   end
 
   test do
     system "#{bin}/kapp", "version"
   end
 end
+
