@@ -1,7 +1,7 @@
 class Kctrl < Formula
   desc "Kctrl"
   homepage "https://carvel.dev/kapp-controller/"
-  version "v0.38.0"
+  version "v0.38.3"
 
   if OS.mac?
     if Hardware::CPU.arm?
