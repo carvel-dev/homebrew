@@ -1,23 +1,23 @@
 class Kbld < Formula
   desc "Kbld"
   homepage "https://carvel.dev/kbld/"
-  version "v0.34.0"
+  version "v0.35.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.34.0/kbld-darwin-arm64"
-      sha256 "2962cd78c6c45cf3f03ca76c52ca7517ed5f2ceba6ed1b3d594a16d516ef05a2"
+      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.35.0/kbld-darwin-arm64"
+      sha256 "6576480fafe10abd700361f0aff24fac691098339ad2e8aa3dc36f76a975e979"
     else
-      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.34.0/kbld-darwin-amd64"
-      sha256 "5fd3afbe09a66fc9e91252c57448045eeeab1ee3f6d305da6f9885186b744e67"
+      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.35.0/kbld-darwin-amd64"
+      sha256 "f0fa574d1dd1c4dcd6a763d38e746a918477ac61a6cd52e8e9e1bba6714259c9"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.34.0/kbld-linux-arm64"
-      sha256 "658725c5dab5349dd4cb826ff9278749f093ed2275aadf51dc994265e6599b2c"
+      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.35.0/kbld-linux-arm64"
+      sha256 "54e92ff92e66a4b86d7768019cb3b40c87e0e6084380c9a765679b2d342fc4f8"
     else
-      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.34.0/kbld-linux-amd64"
-      sha256 "67c86ece94a3747b2e011a5b72044b69f2594ca807621b1e1e4c805f6abcaeef"
+      url "https://github.com/vmware-tanzu/carvel-kbld/releases/download/v0.35.0/kbld-linux-amd64"
+      sha256 "1c3f0e4171063eef70cdabf1730d3557af992aeafb423755e71e9d5f1aea2c9b"
     end
   end
 
