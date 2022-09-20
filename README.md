@@ -6,8 +6,10 @@ Provides tools from [https://carvel.dev](https://carvel.dev) via [Homebrew](http
 To install a package:
 
 ```bash
-$ brew tap vmware-tanzu/carvel
-$ brew install ytt kbld kapp kwt imgpkg vendir
+brew tap vmware-tanzu/carvel
+
+# Please note that kwt is not yet M1-compatible. Exclude it if you are on an M1 machine.
+brew install ytt kbld kapp kwt imgpkg vendir
 ```
 
 For Windows see [https://carvel.dev](https://carvel.dev) for instructions.
