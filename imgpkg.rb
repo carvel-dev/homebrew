@@ -1,23 +1,23 @@
 class Imgpkg < Formula
   desc "Imgpkg"
   homepage "https://carvel.dev/imgpkg/"
-  version "v0.33.0"
+  version "v0.34.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.33.0/imgpkg-darwin-arm64"
-      sha256 "049cfcbb80f52ced7e320fafe68e7170e9b84ee7cef7bf1f21cd33c675475c76"
+      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.34.0/imgpkg-darwin-arm64"
+      sha256 "1e93413fb2ddd91194045406ff64d85f55587cbf0338981ccc5d330552e68672"
     else
-      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.33.0/imgpkg-darwin-amd64"
-      sha256 "7e5a95b48f2f8f674f7f5d1d0207cda6c6813734fa5bb0ed7fa6f5522ae0b5bb"
+      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.34.0/imgpkg-darwin-amd64"
+      sha256 "a4dadd5fa632a619158968d4c384d31e16fdc6738503426483a6e5bc929e8225"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.33.0/imgpkg-linux-arm64"
-      sha256 "08c8eafd44a0a51c47a06d9f5146e8659b88878e6f053fb1a6cc7eeed7f8019f"
+      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.34.0/imgpkg-linux-arm64"
+      sha256 "09b201aa142102f7db5655963b59e8f890580f86be658dfc0460f4b0b2e881b0"
     else
-      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.33.0/imgpkg-linux-amd64"
-      sha256 "10a8327490ca3dbfa3d00f90ae442838d364e4d7d158786e94aa1ff0438dab27"
+      url "https://github.com/vmware-tanzu/carvel-imgpkg/releases/download/v0.34.0/imgpkg-linux-amd64"
+      sha256 "e9b69dfd38e6d09f87ddbf8b2356cbf4d41172a84304640ecafe6be4841304d9"
     end
   end
 
