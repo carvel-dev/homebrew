@@ -1,23 +1,23 @@
 class Kapp < Formula
   desc "Kapp"
   homepage "https://carvel.dev/kapp/"
-  version "v0.54.0"
+  version "v0.54.1"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.54.0/kapp-darwin-arm64"
-      sha256 "1a3de4626ab84a5f29e58ae4498f83886fcb6d588454d1d4603d4bc4414f309e"
+      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.54.1/kapp-darwin-arm64"
+      sha256 "6e829b43e86123de91dd458a29521c91ef62d5a5aaadf11e6bf865c77bcac2df"
     else
-      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.54.0/kapp-darwin-amd64"
-      sha256 "2521971ce334e32af32942aece39c9cdc7a2a9c982c386c2aa61db1a2527a10e"
+      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.54.1/kapp-darwin-amd64"
+      sha256 "116a32c5974fcc08bfbec5e36b3a9145ed12457b10b0d842613add2f34c0ef03"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.54.0/kapp-linux-arm64"
-      sha256 "1afa5624183464b4c9dca7a7f63ea51c7f78d74a722e11ec4a774c8e68fb5784"
+      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.54.1/kapp-linux-arm64"
+      sha256 "197971e92b44a54ddeb28aa3549310382c1a109e408a485b6eb41d9d0b73dba3"
     else
-      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.54.0/kapp-linux-amd64"
-      sha256 "886cd9d634214904ee34f44510abe85ce60acbbe4529131ad97bee387d6327fe"
+      url "https://github.com/vmware-tanzu/carvel-kapp/releases/download/v0.54.1/kapp-linux-amd64"
+      sha256 "436e30a34647b2d889010d08a9242b4d3954f4c84c9ca26dd30751934ecf9950"
     end
   end
 
