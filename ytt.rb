@@ -1,23 +1,23 @@
 class Ytt < Formula
   desc "Ytt"
   homepage "https://carvel.dev/ytt/"
-  version "v0.44.0"
+  version "v0.44.1"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.44.0/ytt-darwin-arm64"
-      sha256 "30ba799b1ba4843e08c801d50aa01fac8bcfc497687157c675ab6a9712251885"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.44.1/ytt-darwin-arm64"
+      sha256 "af305a4a1e71642324511a58d3afab20426a5e890dbb3ba4c49aa07a21225b80"
     else
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.44.0/ytt-darwin-amd64"
-      sha256 "a50a8065c6d80226aa979bb708992ca4da9dd2ec2df2c6c4d5c6e9b4b9f3e6f8"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.44.1/ytt-darwin-amd64"
+      sha256 "037f5a2a059dec221383f3477980fc747f95a00e23f2f2b42e323d9578ac59ee"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.44.0/ytt-linux-arm64"
-      sha256 "4d36b859c01d9899e87a65e5533cb37ab62b17ee8120dd0454b417608130e431"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.44.1/ytt-linux-arm64"
+      sha256 "2b29dfb97be4a7333ab1e911887c884b2d1de16ee75f16b697fdbfe9661f58be"
     else
-      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.44.0/ytt-linux-amd64"
-      sha256 "b3fbce9c6828c7eea09491c24fe49ddba7afe09e4405db33373d2776c91b1e6c"
+      url "https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.44.1/ytt-linux-amd64"
+      sha256 "9f2f151cf42a54cdfee5ee1a98b7255821c9c047498d4af788cec8c4cf520fb8"
     end
   end
 
