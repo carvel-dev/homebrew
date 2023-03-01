@@ -6,7 +6,7 @@ Provides tools from [https://carvel.dev](https://carvel.dev) via [Homebrew](http
 To install a package:
 
 ```bash
-brew tap vmware-tanzu/carvel
+brew tap carvel-dev/homebrew
 
 # Please note that kwt is not yet M1-compatible. Exclude it if you are on an M1 machine.
 brew install ytt kbld kapp kwt imgpkg vendir
@@ -20,7 +20,7 @@ Please join us during our online community meetings. Details can be found on our
 
 You can chat with us on Kubernetes Slack in the #carvel channel and follow us on Twitter at @carvel_dev.
 
-Check out which organizations are using and contributing to Carvel: [Adopter's list](https://github.com/vmware-tanzu/carvel/blob/master/ADOPTERS.md)
+Check out which organizations are using and contributing to Carvel: [Adopter's list](https://github.com/carvel-dev/carvel/blob/master/ADOPTERS.md)
 
 ## Development
 
