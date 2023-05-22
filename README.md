@@ -6,7 +6,7 @@ Provides tools from [https://carvel.dev](https://carvel.dev) via [Homebrew](http
 To install a package:
 
 ```bash
-brew tap carvel-dev/homebrew
+brew tap carvel-dev/carvel
 
 # Please note that kwt is not yet M1-compatible. Exclude it if you are on an M1 machine.
 brew install ytt kbld kapp kwt imgpkg vendir
