@@ -9,7 +9,7 @@ To install a package:
 brew tap carvel-dev/carvel
 
 # Please note that kwt is not yet M1-compatible. Exclude it if you are on an M1 machine.
-brew install ytt kbld kapp kwt imgpkg vendir
+brew install ytt kbld kapp kwt imgpkg vendir kctrl
 ```
 
 For Windows see [https://carvel.dev](https://carvel.dev) for instructions.
