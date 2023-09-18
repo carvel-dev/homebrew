@@ -2,6 +2,7 @@ class Kapp < Formula
   desc "Kapp"
   homepage "https://carvel.dev/kapp/"
   version "v0.58.0"
+  license "Apache-2.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
@@ -23,11 +24,10 @@ class Kapp < Formula
 
   def install
     bin.install stable.url.split("/")[-1] => "kapp"
-    
+
   end
 
   test do
     system "#{bin}/kapp", "version"
   end
 end
-

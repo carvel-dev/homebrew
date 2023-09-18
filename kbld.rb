@@ -2,6 +2,7 @@ class Kbld < Formula
   desc "Kbld"
   homepage "https://carvel.dev/kbld/"
   version "v0.37.5"
+  license "Apache-2.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
@@ -23,11 +24,10 @@ class Kbld < Formula
 
   def install
     bin.install stable.url.split("/")[-1] => "kbld"
-    
+
   end
 
   test do
     system "#{bin}/kbld", "version"
   end
 end
-
