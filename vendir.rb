@@ -2,6 +2,7 @@ class Vendir < Formula
   desc "Vendir"
   homepage "https://carvel.dev/vendir/"
   version "v0.34.4"
+  license "Apache-2.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
@@ -23,11 +24,10 @@ class Vendir < Formula
 
   def install
     bin.install stable.url.split("/")[-1] => "vendir"
-    
+
   end
 
   test do
     system "#{bin}/vendir", "version"
   end
 end
-

@@ -2,6 +2,7 @@ class Kwt < Formula
   desc "Kubernetes Workstation Tools"
   homepage "https://github.com/k14s/kwt"
   version "v0.0.6"
+  license "Apache-2.0"
 
   if OS.mac?
     url "https://github.com/k14s/kwt/releases/download/v0.0.6/kwt-darwin-amd64"

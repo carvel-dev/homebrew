@@ -2,6 +2,7 @@ class Ytt < Formula
   desc "Ytt"
   homepage "https://carvel.dev/ytt/"
   version "v0.45.4"
+  license "Apache-2.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
@@ -23,7 +24,7 @@ class Ytt < Formula
 
   def install
     bin.install stable.url.split("/")[-1] => "ytt"
-    
+
     chmod 0755, bin/"ytt"
 
     bash_output = Utils.safe_popen_read(bin/"ytt", "completion", "bash")
@@ -34,11 +35,10 @@ class Ytt < Formula
 
     fish_output = Utils.safe_popen_read(bin/"ytt", "completion", "fish")
     (fish_completion/"ytt.fish").write fish_output
-    
+
   end
 
   test do
     system "#{bin}/ytt", "version"
   end
 end
-

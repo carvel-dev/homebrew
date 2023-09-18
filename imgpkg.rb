@@ -2,6 +2,7 @@ class Imgpkg < Formula
   desc "Imgpkg"
   homepage "https://carvel.dev/imgpkg/"
   version "v0.37.3"
+  license "Apache-2.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
@@ -23,11 +24,10 @@ class Imgpkg < Formula
 
   def install
     bin.install stable.url.split("/")[-1] => "imgpkg"
-    
+
   end
 
   test do
     system "#{bin}/imgpkg", "version"
   end
 end
-

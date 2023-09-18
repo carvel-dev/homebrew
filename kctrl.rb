@@ -2,6 +2,7 @@ class Kctrl < Formula
   desc "Kctrl"
   homepage "https://carvel.dev/kapp-controller/"
   version "v0.47.0"
+  license "Apache-2.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
@@ -23,11 +24,10 @@ class Kctrl < Formula
 
   def install
     bin.install stable.url.split("/")[-1] => "kctrl"
-    
+
   end
 
   test do
     system "#{bin}/kctrl", "version"
   end
 end
-
