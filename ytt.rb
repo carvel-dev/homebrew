@@ -1,23 +1,23 @@
 class Ytt < Formula
   desc "Ytt"
   homepage "https://carvel.dev/ytt/"
-  version "v0.45.4"
+  version "v0.45.5"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/ytt/releases/download/v0.45.4/ytt-darwin-arm64"
-      sha256 "3e6f092bfe7a121d15126a0de6503797818c6b6745fbc97213f519d35fab08f9"
+      url "https://github.com/carvel-dev/ytt/releases/download/v0.45.5/ytt-darwin-arm64"
+      sha256 "01d2baa62be2ef8cff869139fb44acdde341d52f4201fc9c6c1fe878190bee58"
     else
-      url "https://github.com/carvel-dev/ytt/releases/download/v0.45.4/ytt-darwin-amd64"
-      sha256 "2b6d173dec1b6087e22690386474786fd9a2232c4479d8975cc98ae8160eea76"
+      url "https://github.com/carvel-dev/ytt/releases/download/v0.45.5/ytt-darwin-amd64"
+      sha256 "9817dd189776026fe6f58b0f5e22f8477a94645b6be739062fc632626b946c2b"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/ytt/releases/download/v0.45.4/ytt-linux-arm64"
-      sha256 "cbfc85f11ffd8e61d63accf799b8997caaebe46ee046290cc1c4d05ed1ab145b"
+      url "https://github.com/carvel-dev/ytt/releases/download/v0.45.5/ytt-linux-arm64"
+      sha256 "d6d149f7a0ed9070a97d70c909ec741a705f2f11a4dda2df6eff05262a7f218b"
     else
-      url "https://github.com/carvel-dev/ytt/releases/download/v0.45.4/ytt-linux-amd64"
-      sha256 "9bf62175c7cc0b54f9731a5b87ee40250f0457b1fce1b0b36019c2f8d96db8f8"
+      url "https://github.com/carvel-dev/ytt/releases/download/v0.45.5/ytt-linux-amd64"
+      sha256 "c98d4baf2174bb1b9deb406405b16bbdf5c0df6ef4e1ebe2f782d45b37dfd647"
     end
   end
 
