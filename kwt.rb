@@ -1,23 +1,23 @@
 class Kwt < Formula
   desc "Kwt"
   homepage "https://carvel.dev/kwt/"
-  version "v0.0.7"
+  version "v0.0.8"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/kwt/releases/download/v0.0.7/kwt-darwin-arm64"
-      sha256 "6e951943cbcf75aa7dfb29438f9297742398c47364c407df58db148a609217ff"
+      url "https://github.com/carvel-dev/kwt/releases/download/v0.0.8/kwt-darwin-arm64"
+      sha256 "b303037a022ad260c22517c49f7368eb101d48f7056cc2d82a33bbf3d659b989"
     else
-      url "https://github.com/carvel-dev/kwt/releases/download/v0.0.7/kwt-darwin-amd64"
-      sha256 "8d131cc796d8c2204be3d810c4abe6ec2fc502ad3df1583f64c5863dc50d957a"
+      url "https://github.com/carvel-dev/kwt/releases/download/v0.0.8/kwt-darwin-amd64"
+      sha256 "ea9e6eb76b203799d9f0d3177ac32b9d1d8e531bae363141dfe7030cb6e53a88"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/kwt/releases/download/v0.0.7/kwt-linux-arm64"
-      sha256 "eb0aac724879c0c3d7db012d7f5b4bb9de7d13262c5f9474dd5d094828b46a90"
+      url "https://github.com/carvel-dev/kwt/releases/download/v0.0.8/kwt-linux-arm64"
+      sha256 "7b94a134cbde5ff2e245d102f54b9ac9f81b3fcc5e54a5cefecc1e5845b8a65f"
     else
-      url "https://github.com/carvel-dev/kwt/releases/download/v0.0.7/kwt-linux-amd64"
-      sha256 "02368ab941d354f44399900ce0ff43054ebc8faa7c9fbf414d6a95f02f68aa92"
+      url "https://github.com/carvel-dev/kwt/releases/download/v0.0.8/kwt-linux-amd64"
+      sha256 "1022483a8b59fe238e782a9138f1fee6ca61ecf7ccd1e5f0d98e95c56df94d87"
     end
   end
 
