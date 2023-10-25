@@ -1,23 +1,23 @@
 class Imgpkg < Formula
   desc "Imgpkg"
   homepage "https://carvel.dev/imgpkg/"
-  version "v0.38.1"
+  version "v0.39.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/imgpkg/releases/download/v0.38.1/imgpkg-darwin-arm64"
-      sha256 "f1dfe98dbc33400ae8d525f032d745a5eb2eb19ab9e3d4580e06cfffdb3db293"
+      url "https://github.com/carvel-dev/imgpkg/releases/download/v0.39.0/imgpkg-darwin-arm64"
+      sha256 "378ba1c3b06361d9695c92b54e803309e1bc28084de492c58ed0c993f3987b82"
     else
-      url "https://github.com/carvel-dev/imgpkg/releases/download/v0.38.1/imgpkg-darwin-amd64"
-      sha256 "4115072c441d0cea881e96b3e0108246970eea398ca6df2329f363274f2318af"
+      url "https://github.com/carvel-dev/imgpkg/releases/download/v0.39.0/imgpkg-darwin-amd64"
+      sha256 "2bfbe2a5b69ab4da652753af9b335ad5dd222780428f064aedd2f50bd11e2693"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/imgpkg/releases/download/v0.38.1/imgpkg-linux-arm64"
-      sha256 "fb384e5f23428694cc55f0294a762d9d1c341239e838d0f0756309c78923bf55"
+      url "https://github.com/carvel-dev/imgpkg/releases/download/v0.39.0/imgpkg-linux-arm64"
+      sha256 "7b247c24850dbf4ff70095b6d7f5aff12aea15d0ece9e9ecf66f92e3c9d2f332"
     else
-      url "https://github.com/carvel-dev/imgpkg/releases/download/v0.38.1/imgpkg-linux-amd64"
-      sha256 "136edef97a4ffe98c9a2e70549a053f409ec35cc59751e7a4b314e9db6d53074"
+      url "https://github.com/carvel-dev/imgpkg/releases/download/v0.39.0/imgpkg-linux-amd64"
+      sha256 "98b80baa5d665c5119fc8e2a62978f9d193c9647e3c47ab72867b055b94d14ff"
     end
   end
 
