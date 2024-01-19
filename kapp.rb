@@ -1,23 +1,23 @@
 class Kapp < Formula
   desc "Kapp"
   homepage "https://carvel.dev/kapp/"
-  version "v0.59.2"
+  version "v0.60.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/kapp/releases/download/v0.59.2/kapp-darwin-arm64"
-      sha256 "a404ed1bee2e0cb1a09498a991a3c897ee2ad08134a4eff01529ff73d7b47f3a"
+      url "https://github.com/carvel-dev/kapp/releases/download/v0.60.0/kapp-darwin-arm64"
+      sha256 "7fa5e9e9aff5c29eb170252ba56b598038e7e141c5c7afa60e81b872e96c8729"
     else
-      url "https://github.com/carvel-dev/kapp/releases/download/v0.59.2/kapp-darwin-amd64"
-      sha256 "c20034a347bf90d977daac29eadbb4db4a7dc172a18a9d27fe0a48c39c124d27"
+      url "https://github.com/carvel-dev/kapp/releases/download/v0.60.0/kapp-darwin-amd64"
+      sha256 "8746b9b49c47f27b9b08f425f247a3ea0b847f5cb9a1b88e4cff6c036112c7d7"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/kapp/releases/download/v0.59.2/kapp-linux-arm64"
-      sha256 "03d8ef43aa467756a22fea6d32745b3bddef163fa22de4f8b5edd1d60fdc0585"
+      url "https://github.com/carvel-dev/kapp/releases/download/v0.60.0/kapp-linux-arm64"
+      sha256 "9847fa6f7122451e14833d9aaa376692dfc9fe2895ceb3a7159616a8041b68f5"
     else
-      url "https://github.com/carvel-dev/kapp/releases/download/v0.59.2/kapp-linux-amd64"
-      sha256 "6986369c06e89bcec366b2cc18f81634fcd95e2b52c6c6f7ee46b497ade25f7d"
+      url "https://github.com/carvel-dev/kapp/releases/download/v0.60.0/kapp-linux-amd64"
+      sha256 "7cc17971634da69c80d7159199c2c514c38b479d28987e055ce2c173bfbd9306"
     end
   end
 
