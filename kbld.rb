@@ -1,23 +1,23 @@
 class Kbld < Formula
   desc "Kbld"
   homepage "https://carvel.dev/kbld/"
-  version "v0.44.0"
+  version "v0.44.1"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/kbld/releases/download/v0.44.0/kbld-darwin-arm64"
-      sha256 "31086a41bcfd012a7b9e2e7fac6f6615f8d8b633e00104c97ca7235b242915d2"
+      url "https://github.com/carvel-dev/kbld/releases/download/v0.44.1/kbld-darwin-arm64"
+      sha256 "b3ee4a28b4033a7f01bb9192571ec372f063e771f7dca7e54c9362239745177c"
     else
-      url "https://github.com/carvel-dev/kbld/releases/download/v0.44.0/kbld-darwin-amd64"
-      sha256 "2912583db28bc0caa88549ce142c6f30731e0580cd141e646673f4b733f52996"
+      url "https://github.com/carvel-dev/kbld/releases/download/v0.44.1/kbld-darwin-amd64"
+      sha256 "a81eced438e60a0ba3c87c3823673eb9f935a8e0e7694c0232e70674001f014e"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/kbld/releases/download/v0.44.0/kbld-linux-arm64"
-      sha256 "3a85316703a6c22d2d4d286a09993cd8d9c4955ca9e863f8fd7096a596070840"
+      url "https://github.com/carvel-dev/kbld/releases/download/v0.44.1/kbld-linux-arm64"
+      sha256 "afcb44d37dbac1e2f23c056865798efe0f8b7ff982eee4644ceb146e30584e4a"
     else
-      url "https://github.com/carvel-dev/kbld/releases/download/v0.44.0/kbld-linux-amd64"
-      sha256 "2b1550a7293963fec0a4d2b6fdbfa9fc24af4a43035d18ba8e6f9b4c67662ad0"
+      url "https://github.com/carvel-dev/kbld/releases/download/v0.44.1/kbld-linux-amd64"
+      sha256 "ffd557f0057c22b8f49ff77ee1ea40d93f3da2b9cb18a82e9dda9399970c2282"
     end
   end
 
