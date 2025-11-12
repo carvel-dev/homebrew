@@ -1,23 +1,23 @@
 class Kctrl < Formula
   desc "Kctrl"
   homepage "https://carvel.dev/kapp-controller/"
-  version "v0.58.1"
+  version "v0.59.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/kapp-controller/releases/download/v0.58.1/kctrl-darwin-arm64"
-      sha256 "89f2c5fef2067295684e34592c4c25a1e3b7f88d4fb529310007d001098f96a9"
+      url "https://github.com/carvel-dev/kapp-controller/releases/download/v0.59.0/kctrl-darwin-arm64"
+      sha256 "25035cd7f32bcba588ee2f96aafa635ddd8963dc1cef4b5096eae4752119620a"
     else
-      url "https://github.com/carvel-dev/kapp-controller/releases/download/v0.58.1/kctrl-darwin-amd64"
-      sha256 "85f6ab96d7db39384d78d8998efbe8652063405e76792f1163e9a61a52c8caf3"
+      url "https://github.com/carvel-dev/kapp-controller/releases/download/v0.59.0/kctrl-darwin-amd64"
+      sha256 "47cbb16acae187d11bdc6af8612f9a278f367033cb5e4d459ea5336e3c7a7061"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/kapp-controller/releases/download/v0.58.1/kctrl-linux-arm64"
-      sha256 "a9cb74f12effb45c56d16b56551aaf50e96fac0359b5ace6ec8e40d370762ac8"
+      url "https://github.com/carvel-dev/kapp-controller/releases/download/v0.59.0/kctrl-linux-arm64"
+      sha256 "f78201bc2f56c3010a05e6cd2bea9cbb39ad2249ca38a40cebec19ea5eb058b4"
     else
-      url "https://github.com/carvel-dev/kapp-controller/releases/download/v0.58.1/kctrl-linux-amd64"
-      sha256 "978fc078d53a827716dacde7483294d1265c3d42ace0c2582df62b5c38dd17ae"
+      url "https://github.com/carvel-dev/kapp-controller/releases/download/v0.59.0/kctrl-linux-amd64"
+      sha256 "96d098ab5e897acba8e7b36f6e9be731b53517cfc3f34380c5f3f24a7ac2a8dc"
     end
   end
 
