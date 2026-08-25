@@ -1,23 +1,23 @@
 class Vendir < Formula
   desc "Vendir"
   homepage "https://carvel.dev/vendir/"
-  version "v0.46.0"
+  version "v0.46.1"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/vendir/releases/download/v0.46.0/vendir-darwin-arm64"
-      sha256 "e136160aa642231c6eb1df25cbe3e57e5f3848ac0a7e7de57bbc3249fdbd800f"
+      url "https://github.com/carvel-dev/vendir/releases/download/v0.46.1/vendir-darwin-arm64"
+      sha256 "b0ed7ffa337b4964e5a0b865b786e97b75e7777fb4a289f06193671b81e320a9"
     else
-      url "https://github.com/carvel-dev/vendir/releases/download/v0.46.0/vendir-darwin-amd64"
-      sha256 "5b417c837b0134fabf2c4a322db054eacb8cfbe8d0e8cbbb86afc7e4f0d625fd"
+      url "https://github.com/carvel-dev/vendir/releases/download/v0.46.1/vendir-darwin-amd64"
+      sha256 "133871a31862e2ea14c55e7162d5227b3b9b54774376faf2aea3f8802dd5bf2b"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/carvel-dev/vendir/releases/download/v0.46.0/vendir-linux-arm64"
-      sha256 "f80a27f1247ad4353b6054ca9d7e13e2511bf70c0e28d85bc314d2177ec2b0d2"
+      url "https://github.com/carvel-dev/vendir/releases/download/v0.46.1/vendir-linux-arm64"
+      sha256 "6f9b8d829fdead89b40feca901c5804826db94121abecdc6808052c3252e847b"
     else
-      url "https://github.com/carvel-dev/vendir/releases/download/v0.46.0/vendir-linux-amd64"
-      sha256 "878f3c77cae21b9b63d0ea6c11454c0008d41652d2eb3d1844fdcf69cca6ae9e"
+      url "https://github.com/carvel-dev/vendir/releases/download/v0.46.1/vendir-linux-amd64"
+      sha256 "96318c8f2f6ed8b0853b5fac50e22e400af6d8fb2699835e5a8b1663db65c6a9"
     end
   end
 
